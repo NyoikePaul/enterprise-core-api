@@ -1,17 +1,11 @@
-# Python
 __pycache__/
 *.py[cod]
+*.class
 .env
-venv/
-
-# Terraform
+.venv
+env/
+dist/
+*.log
 .terraform/
-*.tfstate
-*.tfstate.backup
-*.tfvars
-.terraform.lock.hcl
-
-# Security
-*.pem
-*.key
-doctl
+terraform.tfstate*
+venv/
