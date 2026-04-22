@@ -43,4 +43,4 @@ This API follows Clean Architecture principles:
 
 
 *Professional-grade engineering for long-term scalability.*
->>>>>>> main
+
