@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
-from src.core.config import get_settings
+from src.core.config.settings import get_settings
 from typing import Generator
 
 settings = get_settings()

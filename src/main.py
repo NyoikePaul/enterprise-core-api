@@ -1,11 +1,13 @@
+from dotenv import load_dotenv
 from fastapi import FastAPI, Depends
-from src.api.v1.auth.router import router as auth_router
+from src.api.v1.routers.auth.router import router as auth_router
 from src.core.security.dependencies import get_current_active_user
 from src.models.user import User
 from src.schemas.user import UserRead
-from src.core.config import get_settings
+from src.core.config.settings import get_settings
 
 settings = get_settings()
+load_dotenv()
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
