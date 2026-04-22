@@ -26,14 +26,14 @@ jobs:
 
       - name: Install deps
         run: |
-          pip install -r requirements.txt || true
+          pip install -r requirements.txt
           pip install ruff pytest bandit
 
       - name: Lint
-        run: ruff check . || true
+        run: ruff check .
 
       - name: Security Scan
-        run: bandit -r . || true
+        run: bandit -r .
 
       - name: Run Tests
-        run: pytest || true
+        run: pytest
