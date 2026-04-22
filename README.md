@@ -24,6 +24,13 @@ docker-compose up --build
 * **Infrastructure:** Terraform (IaC) for automated provisioning
 * **Deployment:** Docker & GitHub Actions (CI/CD)
 
+
+## Architecture: Clean DDD
+This API follows Clean Architecture principles:
+- **Domain**: Core entities and repository interfaces.
+- **Application**: Use cases and business logic orchestration.
+- **Infrastructure**: Concrete implementations (PostgreSQL, M-Pesa, E-TIMS).
+- **API**: FastAPI routers and versioned entry points.## Architecture: Clean DDD
 ##  Cloud Automation Features
 * **Zero-Touch Provisioning:** The `infra/` directory contains Terraform configurations to spin up a production-ready Linux environment in minutes.
 * **Automated Security:** Includes pre-configured GitHub Actions to run security audits and unit tests on every push.

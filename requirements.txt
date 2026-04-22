@@ -5,20 +5,15 @@ psycopg2-binary==2.9.9
 pytest==8.0.0
 alembic==1.13.1
 httpx==0.27.0
-
+ 
+# Settings & validation
+pydantic-settings
+email-validator
+ 
 # Authentication
 python-jose[cryptography]
 passlib[bcrypt]
 python-multipart
-
-# Authentication dependencies
-python-jose[cryptography]
-passlib[bcrypt]
-python-multipart
-
-# Settings & Auth
-pydantic-settings
-python-jose[cryptography]
-passlib[bcrypt]
-python-multipart
-httpx
+ 
+# Rate limiting
+slowapi
