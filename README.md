@@ -43,4 +43,7 @@ This API follows Clean Architecture principles:
 
 
 *Professional-grade engineering for long-term scalability.*
+**
+<img width="1358" height="728" alt="image" src="https://github.com/user-attachments/assets/0c06be13-dfdd-4a9c-aa4b-8802014ea0c4" />
+
 
